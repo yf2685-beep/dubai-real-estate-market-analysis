@@ -81,26 +81,53 @@ Dubai_Market_Analysis.ipynb
 
 ## Generated Figures
 
-All figures are saved to the `figures/` directory when the notebook runs:
+### Transaction Volume Over Time
+![Daily transaction volume with conflict marker](figures/fig01_transaction_volume_over_time.png)
 
-| File | Description |
-|------|-------------|
-| `fig01_transaction_volume_over_time.png` | Daily transaction count with conflict marker |
-| `fig02_weekly_volume_by_type.png` | Weekly volume by Sales/Mortgage/Gifts |
-| `fig03_price_distribution.png` | Histogram + box plot by property type |
-| `fig04_price_and_volume_over_time.png` | Rolling median price + daily sales volume |
-| `fig05_pre_post_conflict_comparison.png` | Pre/post bar comparison (price, volume, off-plan) |
-| `fig06_top_areas_volume.png` | Top 15 areas by sales count |
-| `fig07_top_areas_price.png` | Top 15 areas by median price |
-| `fig08_top_areas_price_per_sqm.png` | Top 15 areas by price per sqm |
-| `fig09_property_type_distribution.png` | Pie chart + sub-type bar chart |
-| `fig10_price_by_subtype.png` | Violin plot: price by sub-type |
-| `fig11_offplan_vs_ready.png` | Weekly volume, median price, rolling share % |
-| `fig12_room_configuration_analysis.png` | Volume and price by bedroom count |
-| `fig13_area_vs_price_scatter.png` | Area vs price scatter (colored by price/sqm) |
-| `fig14_correlation_heatmap.png` | Correlation matrix of numeric features |
-| `fig15_price_by_metro.png` | Median price by nearest metro station |
-| `fig16_monthly_summary.png` | 2×2 monthly aggregated summary |
+### Weekly Volume by Transaction Type
+![Weekly volume by Sales/Mortgage/Gifts](figures/fig02_weekly_volume_by_type.png)
+
+### Price Distribution
+![Price histogram and box plot by property type](figures/fig03_price_distribution.png)
+
+### Price & Volume Over Time
+![Rolling median price and daily sales volume](figures/fig04_price_and_volume_over_time.png)
+
+### Pre vs Post Conflict Comparison
+![Bar chart comparison of price, volume, and off-plan share](figures/fig05_pre_post_conflict_comparison.png)
+
+### Top Areas by Sales Volume
+![Top 15 areas by transaction count](figures/fig06_top_areas_volume.png)
+
+### Top Areas by Median Price
+![Top 15 areas by median sale price](figures/fig07_top_areas_price.png)
+
+### Top Areas by Price per sqm
+![Top 15 areas by price per square meter](figures/fig08_top_areas_price_per_sqm.png)
+
+### Property Type Distribution
+![Pie chart and sub-type bar chart](figures/fig09_property_type_distribution.png)
+
+### Price by Property Sub-Type
+![Violin plot of price by sub-type](figures/fig10_price_by_subtype.png)
+
+### Off-Plan vs Ready Analysis
+![Weekly volume, median price, and rolling off-plan share](figures/fig11_offplan_vs_ready.png)
+
+### Room Configuration Analysis
+![Volume and price by bedroom count](figures/fig12_room_configuration_analysis.png)
+
+### Area vs Price Scatter
+![Scatter plot colored by price per sqm](figures/fig13_area_vs_price_scatter.png)
+
+### Correlation Heatmap
+![Correlation matrix of numeric features](figures/fig14_correlation_heatmap.png)
+
+### Price by Nearest Metro Station
+![Median price by nearest metro station](figures/fig15_price_by_metro.png)
+
+### Monthly Summary
+![2x2 monthly aggregated summary](figures/fig16_monthly_summary.png)
 
 ---
 
