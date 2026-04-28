@@ -34,6 +34,45 @@
 
 ---
 
+## Data Analysis & Conclusions
+
+### 1. Market Overview
+The dataset covers **54,289 transactions** (41,691 sales, 10,632 mortgages, 1,758 gifts) across 83 days from February 1 to April 24, 2026. February recorded the highest activity — **16,957 sales totaling AED 50.7 billion** — while volume declined month-on-month through March (13,438 sales, AED 37.4B) and April (11,296 sales, AED 32.7B), likely reflecting the typical seasonal slowdown as Ramadan approached.
+
+### 2. Price Distribution Is Highly Skewed
+The median sale price is **AED 1.68 million**, but the mean is **AED 2.90 million** — a 1.73× gap driven by ultra-premium outliers (skewness = 4.76). This means headline "average price" figures routinely overstate what a typical buyer pays by nearly 75%. For any policy or affordability analysis, the median is the only honest reference point.
+
+![Price distribution](figures/fig03_price_distribution.png)
+
+### 3. Conflict Marker: Volume Dropped, Prices Held
+After the February 28 geopolitical conflict marker, **daily sales volume fell from 647.8 to 443.7 transactions/day (−32%)**, but median prices showed virtually no change (AED 1.68M both periods, p = 0.147 — statistically insignificant). This suggests the conflict suppressed transaction activity but did not trigger a price correction, consistent with Dubai's reputation as a market with sticky seller expectations. Notably, the **off-plan share rose from 62.2% pre-conflict to 72.0% post-conflict**, suggesting buyers shifted toward developer deals (typically with flexible payment plans) as financial uncertainty increased.
+
+![Pre vs post conflict comparison](figures/fig05_pre_post_conflict_comparison.png)
+
+### 4. Off-Plan Dominates — but Ready Commands a Premium
+**68% of all sales are off-plan**, reflecting Dubai's developer-led supply model. Counterintuitively, **ready properties have a higher median price (AED 1.80M) than off-plan (AED 1.65M)**. This is not a paradox: off-plan properties are often sold early at a discount to attract investors, while ready units in established locations command a premium for immediate occupancy.
+
+![Off-plan vs ready analysis](figures/fig11_offplan_vs_ready.png)
+
+### 5. Volume Leaders ≠ Price Leaders
+The highest-volume areas — Jumeirah Village Circle (2,729 sales), Madinat Al Mataar (2,586), Al Yelayiss 1 (2,014) — are mid-market, high-density residential districts. The highest-price areas — Palm Jabal Ali (AED 26M median), Trade Center Second (AED 15.3M), Marsa Dubai (AED 48,755/sqm) — are premium waterfront and business corridors. These two lists share almost no overlap, confirming that Dubai's market is structurally bifurcated between an investor-driven volume segment and a luxury segment.
+
+![Top areas by volume](figures/fig06_top_areas_volume.png)
+![Top areas by median price](figures/fig07_top_areas_price.png)
+
+### 6. Metro Proximity Creates a 6.5× Price Gap
+Transactions near premium metro stations (Mina Seyahi: AED 4.5M median; Palm Jumeirah: AED 4.2M; Financial Centre: AED 4.0M) are priced **6–7× higher** than those near outer-district stations (Rashidiya: AED 0.69M; Sharaf DG: AED 1.03M). Infrastructure access is not just a convenience — it is a primary driver of property valuation in Dubai.
+
+![Price by metro station](figures/fig15_price_by_metro.png)
+
+### 7. 1BR Units Drive Volume; Size Strongly Predicts Price
+Among unit sales, **1BR apartments lead with 13,883 transactions**, followed by 2BR (8,534) and Studios (8,268) — a profile consistent with investor-driven demand rather than family end-use. Property area is a strong predictor of price: **Pearson r = 0.793** (p < 0.001), meaning size explains approximately 63% of the variance in unit prices. The remaining 37% is attributable to location, finishes, and proximity to amenities.
+
+![Room configuration analysis](figures/fig12_room_configuration_analysis.png)
+![Area vs price scatter](figures/fig13_area_vs_price_scatter.png)
+
+---
+
 ## Human-Centered Reflections
 
 This analysis was conducted in the context of an HCDS course. Three critical data decisions are documented in the notebook:
